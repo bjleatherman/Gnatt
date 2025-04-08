@@ -1,0 +1,91 @@
+[
+    {
+      "expectedStart": "2025-05-01",
+      "actualStart": "2025-05-02",
+      "userOverwriteStart": "2025-05-02",
+      "expectedEnd": "2025-05-07",
+      "clientAgreedEnd": "2025-05-08",
+      "userOverwriteEnd": "2025-05-07",
+      "actualEnd": "2025-05-09",
+      "analyst": "Alice",
+      "phase": "Planning"
+    },
+    {
+      "expectedStart": "2025-05-03",
+      "actualStart": "2025-05-04",
+      "userOverwriteStart": "",
+      "expectedEnd": "2025-05-10",
+      "clientAgreedEnd": "2025-05-11",
+      "userOverwriteEnd": "",
+      "actualEnd": "2025-05-12",
+      "analyst": "Bob",
+      "phase": "Execution"
+    },
+    {
+      "expectedStart": "2025-05-05",
+      "actualStart": "2025-05-06",
+      "userOverwriteStart": "2025-05-06",
+      "expectedEnd": "2025-05-12",
+      "clientAgreedEnd": "2025-05-13",
+      "userOverwriteEnd": "2025-05-12",
+      "actualEnd": "2025-05-14",
+      "analyst": "Carol",
+      "phase": "Review"
+    },
+    {
+      "expectedStart": "2025-05-07",
+      "actualStart": "2025-05-08",
+      "userOverwriteStart": "",
+      "expectedEnd": "2025-05-14",
+      "clientAgreedEnd": "2025-05-15",
+      "userOverwriteEnd": "",
+      "actualEnd": "2025-05-16",
+      "analyst": "Dave",
+      "phase": "Execution"
+    },
+    {
+      "expectedStart": "2025-05-09",
+      "actualStart": "2025-05-10",
+      "userOverwriteStart": "2025-05-10",
+      "expectedEnd": "2025-05-16",
+      "clientAgreedEnd": "2025-05-17",
+      "userOverwriteEnd": "2025-05-16",
+      "actualEnd": "2025-05-18",
+      "analyst": "Eve",
+      "phase": "Deployment"
+    },
+    {
+      "expectedStart": "2025-05-11",
+      "actualStart": "2025-05-12",
+      "userOverwriteStart": "",
+      "expectedEnd": "2025-05-18",
+      "clientAgreedEnd": "2025-05-19",
+      "userOverwriteEnd": "",
+      "actualEnd": "2025-05-20",
+      "analyst": "Frank",
+      "phase": "Maintenance"
+    },
+    {
+      "expectedStart": "2025-05-13",
+      "actualStart": "2025-05-14",
+      "userOverwriteStart": "2025-05-14",
+      "expectedEnd": "2025-05-20",
+      "clientAgreedEnd": "2025-05-21",
+      "userOverwriteEnd": "2025-05-20",
+      "actualEnd": "2025-05-22",
+      "analyst": "Grace",
+      "phase": "Review"
+    },
+    {
+      "expectedStart": "2025-05-15",
+      "actualStart": "2025-05-16",
+      "userOverwriteStart": "",
+      "expectedEnd": "2025-05-22",
+      "clientAgreedEnd": "2025-05-23",
+      "userOverwriteEnd": "",
+      "actualEnd": "2025-05-24",
+      "analyst": "Henry",
+      "phase": "Execution"
+    }
+  ]
+  

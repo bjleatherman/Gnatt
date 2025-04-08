@@ -1,0 +1,123 @@
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+/* --- Container Setup --- */
+/* The parent div in ProjectTable with style={{ display: "flex" }} handles the main flex layout */
+
+.left-table-container {
+    border-right: 1px solid #dee2e6;
+    flex-shrink: 0; /* Prevent left table container from shrinking */
+    position: sticky; /* Keep left column sticky */
+    left: 0;
+    z-index: 2; /* Above right table headers */
+    background-color: #f8f9fa; /* Match body or desired background */
+}
+
+/* --- NEW: Styles for the scroll wrapper --- */
+.scrollable-right-pane {
+    flex-grow: 1; /* Allow this pane to take remaining width */
+    overflow-x: auto; /* Apply horizontal scrolling HERE */
+    /* overflow-y: hidden; */ /* Add this if a vertical scrollbar appears unexpectedly */
+}
+
+/* --- MODIFIED: Right table container no longer scrolls --- */
+.right-table-container {
+    /* REMOVE overflow-x: auto; */
+    /* REMOVE flex-grow: 1; */
+    background-color: white; /* Keep background */
+    width: fit-content; /* Allow container to size to the table within it */
+    min-width: 100%; /* Ensure it fills the scrollable pane horizontally if table is smaller */
+}
+
+
+/* --- Left Table Styles --- */
+.left-table {
+    table-layout: fixed;
+    width: auto;
+    border-collapse: collapse;
+}
+
+.left-table thead th {
+    position: sticky; /* Keep left headers sticky */
+    top: 0;
+    background-color: #212529;
+    color: white;
+    z-index: 3; /* Above left container bg and right headers */
+}
+
+.left-table th,
+.left-table td {
+    /* Keep styles as they were */
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 100px;
+    min-width: 70px;
+    padding: 4px;
+    font-size: 12px;
+    line-height: 1.2;
+    vertical-align: middle;
+    border: 1px solid #dee2e6;
+}
+
+/* Keep background overrides for striped left table */
+.left-table tbody td {
+    background-color: white;
+}
+.left-table.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    background-color: var(--bs-table-accent-bg) !important;
+}
+.left-table.table-striped>tbody>tr:nth-of-type(even)>* {
+    background-color: white !important;
+}
+
+
+/* --- Right Table Styles --- */
+.right-table {
+    /* Keep styles as they were */
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.right-table thead th {
+    /* Keep sticky header styles */
+    min-width: 35px;
+    width: 35px;
+    max-width: 35px;
+    padding: 4px 2px;
+    font-size: 10px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Below left table headers */
+    background-color: #212529;
+    color: white;
+    border: 1px solid #dee2e6;
+}
+
+.right-table tbody td {
+    /* Keep cell styles */
+    min-width: 35px;
+    width: 35px;
+    max-width: 35px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    border: 1px solid #dee2e6;
+    overflow: hidden;
+}
+
+.right-table tbody td > div {
+    line-height: 1;
+}
