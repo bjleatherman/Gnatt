@@ -8,31 +8,24 @@ body {
 }
 
 /* --- Container Setup --- */
-/* The parent div in ProjectTable with style={{ display: "flex" }} handles the main flex layout */
-
 .left-table-container {
-    border-right: 1px solid #dee2e6;
-    flex-shrink: 0; /* Prevent left table container from shrinking */
-    position: sticky; /* Keep left column sticky */
+    /* border-right: 1px solid #dee2e6; */ /* Keep this removed */
+    flex-shrink: 0;
+    position: sticky;
     left: 0;
-    z-index: 2; /* Above right table headers */
-    background-color: #f8f9fa; /* Match body or desired background */
+    z-index: 2;
+    background-color: #f8f9fa;
 }
 
-/* --- NEW: Styles for the scroll wrapper --- */
 .scrollable-right-pane {
-    flex-grow: 1; /* Allow this pane to take remaining width */
-    overflow-x: auto; /* Apply horizontal scrolling HERE */
-    /* overflow-y: hidden; */ /* Add this if a vertical scrollbar appears unexpectedly */
+    flex-grow: 1;
+    overflow-x: auto;
 }
 
-/* --- MODIFIED: Right table container no longer scrolls --- */
 .right-table-container {
-    /* REMOVE overflow-x: auto; */
-    /* REMOVE flex-grow: 1; */
-    background-color: white; /* Keep background */
-    width: fit-content; /* Allow container to size to the table within it */
-    min-width: 100%; /* Ensure it fills the scrollable pane horizontally if table is smaller */
+    background-color: white;
+    width: fit-content;
+    min-width: 100%;
 }
 
 
@@ -40,20 +33,20 @@ body {
 .left-table {
     table-layout: fixed;
     width: auto;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Keep border-collapse */
 }
 
 .left-table thead th {
-    position: sticky; /* Keep left headers sticky */
+    position: sticky;
     top: 0;
     background-color: #212529;
     color: white;
-    z-index: 3; /* Above left container bg and right headers */
+    z-index: 3;
+    /* border: 1px solid #dee2e6; */ /* REMOVED */
 }
 
 .left-table th,
 .left-table td {
-    /* Keep styles as they were */
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
@@ -63,7 +56,7 @@ body {
     font-size: 12px;
     line-height: 1.2;
     vertical-align: middle;
-    border: 1px solid #dee2e6;
+    /* border: 1px solid #dee2e6; */ /* REMOVED */
 }
 
 /* Keep background overrides for striped left table */
@@ -81,13 +74,11 @@ body {
 
 /* --- Right Table Styles --- */
 .right-table {
-    /* Keep styles as they were */
     table-layout: fixed;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Keep border-collapse */
 }
 
 .right-table thead th {
-    /* Keep sticky header styles */
     min-width: 35px;
     width: 35px;
     max-width: 35px;
@@ -98,14 +89,13 @@ body {
     vertical-align: middle;
     position: sticky;
     top: 0;
-    z-index: 1; /* Below left table headers */
+    z-index: 1;
     background-color: #212529;
     color: white;
-    border: 1px solid #dee2e6;
+    /* border: 1px solid #dee2e6; */ /* REMOVED */
 }
 
 .right-table tbody td {
-    /* Keep cell styles */
     min-width: 35px;
     width: 35px;
     max-width: 35px;
@@ -114,8 +104,8 @@ body {
     text-align: center;
     vertical-align: middle;
     font-size: 12px;
-    border: 1px solid #dee2e6;
     overflow: hidden;
+    /* border: 1px solid #dee2e6; */ /* REMOVED */
 }
 
 .right-table tbody td > div {
