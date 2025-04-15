@@ -57,6 +57,8 @@ body {
     line-height: 1.2;
     vertical-align: middle;
     /* border: 1px solid #dee2e6; */ /* REMOVED */
+    height: 40px; /* Match the height of the right table cells */
+    box-sizing: border-box; /* Good practice when setting height/padding */
 }
 
 /* Keep background overrides for striped left table */
@@ -95,17 +97,21 @@ body {
     /* border: 1px solid #dee2e6; */ /* REMOVED */
 }
 
+/* --- Right Table Body Cell - MODIFIED --- */
 .right-table tbody td {
     min-width: 35px;
     width: 35px;
     max-width: 35px;
-    height: 40px;
-    padding: 0;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 12px;
-    overflow: hidden;
-    /* border: 1px solid #dee2e6; */ /* REMOVED */
+    height: 40px;    /* Keep height consistent */
+    padding: 0;      /* CRITICAL: Ensure no padding */
+    text-align: center; /* Center the E, A, O text */
+    vertical-align: middle; /* Vertically center the text */
+    font-size: 12px; /* Adjust as needed */
+    font-weight: bold; /* Make text bolder */
+    color: #333; /* Set text color for contrast */
+    overflow: hidden; /* Keep overflow hidden */
+    /* border: none; */ /* Explicitly remove border if any linger */
+    box-sizing: border-box;
 }
 
 .right-table tbody td > div {

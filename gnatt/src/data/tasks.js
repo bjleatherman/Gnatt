@@ -1,12 +1,12 @@
-[
+const tasks = [
     {
-      "expectedStart": "2025-05-01",
-      "actualStart": "2025-05-02",
-      "userOverwriteStart": "2025-05-02",
-      "expectedEnd": "2025-05-07",
-      "clientAgreedEnd": "2025-05-08",
-      "userOverwriteEnd": "2025-05-07",
-      "actualEnd": "2025-05-09",
+      "expectedStart": "2025-05-10",
+      "actualStart": "2025-05-10",
+      "userOverwriteStart": "2025-05-10",
+      "expectedEnd": "2025-05-15",
+      "clientAgreedEnd": "2025-05-15",
+      "userOverwriteEnd": "2025-05-15",
+      "actualEnd": "2025-05-15",
       "analyst": "Alice",
       "phase": "Planning"
     },
@@ -88,4 +88,5 @@
       "phase": "Execution"
     }
   ]
-  
+
+export default tasks;
