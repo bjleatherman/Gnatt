@@ -1,3 +1,4 @@
+import Combobox from './Combobox.jsx';
 import tasks from './data/tasks.js';
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
       {/* Table */}
       <div className="card shadow-sm mb-5">
         <div className="card-body">
-          <table className="table table-hover align-middle">
+          <table className="table table-hover align-middle table-striped">
             <thead className="table-dark">
               <tr>
                 <th>Analyst</th>
@@ -39,7 +40,11 @@ function App() {
             <tbody>
               {tasks.map((task, index) => (
                 <tr key={index}>
-                  <td><span className="fw-medium">{task.analyst}</span></td>
+                  <td>
+                    {/* <span className="fw-medium"> */}
+                      <Combobox initialValue={task.analyst}/>
+                    {/* </span> */}
+                  </td>
                   <td>
                     <span className={`badge ${
                       task.phase === 'Planning' ? 'bg-info' :
