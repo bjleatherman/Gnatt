@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useId } from 'react';
-import analystData from './data/analysts'
+import analystData from '../data/analysts'
 import './Combobox.css';
 
 const allAnalysts = analystData[0]?.analysts || [];

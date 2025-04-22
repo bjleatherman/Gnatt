@@ -1,4 +1,4 @@
-import Combobox from './Combobox.jsx';
+import Combobox from './components/Combobox.jsx';
 import tasks from './data/tasks.js';
 
 function App() {
